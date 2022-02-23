@@ -1,1 +1,105 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --hero-color: #F1F3FF;
+}
+
+body {
+  font-family: 'Helvetica', Arial, sans-serif;
+}
+
+#header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: var(--hero-color);
+}
+
+#header .header-logo {
+  width: 100px;
+  height: auto;
+}
+
+#header .mobile-menu {
+  width: 36px;
+  height: auto;
+}
+
+#header .nav-menu li {
+  margin-right: 16px;
+  margin-left: 16px;
+  font-size: 14px;
+}
+
+#header .nav-menu li a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+#header .nav-menu li a:hover {
+  color: var(--primary-color);
+}
+
+#header .nav-menu li a.register-cta {
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+
+#main {
+  overflow: hidden;
+}
+
+#hero {
+  padding-top: 20px;
+  background-color: var(--hero-color);
+}
+
+#hero h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+#hero p {
+  margin-top: 15px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#hero .rent-cta {
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+
+@media screen and (max-width: 768px) {
+  #hero .hero-text {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #hero .hero-text {
+    margin-bottom: 0;
+  }
+}
+
+#hero .hero-image {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #hero .hero-image {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #hero .hero-image {
+    -webkit-transform: translateX(11%);
+            transform: translateX(11%);
+    right: 0;
+    bottom: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
