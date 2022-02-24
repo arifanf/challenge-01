@@ -13,7 +13,7 @@ body {
     padding-bottom: 24px;
     background-color: var(--hero-color);
     .header-logo {
-        width: 100px;
+        width: 100%;
         height: auto;
     }
     .mobile-menu {
@@ -47,27 +47,26 @@ body {
 #hero {
     padding-top: 20px;
     background-color: var(--hero-color);
-    h1 {
-        font-size: 30px;
-        font-weight: bold;
-        color: var(--primary-color);
-    }
-    p {
-        margin-top: 15px;
-        margin-bottom: 16px;
-        font-size: 14px;
-        font-weight: 400;
-    }
-    .rent-cta {
-        font-size: 14px;
-        color: var(--secondary-color);
-    }
     .hero-text {
+        margin-top: 20px;
+        margin-bottom: 30px;
         @media screen and (max-width: 768px) {
             margin-bottom: 20px;
         }
-        @media screen and (min-width: 1024px) {
-            margin-bottom: 0;
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        p {
+            margin-top: 15px;
+            margin-bottom: 16px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .rent-cta {
+            font-size: 14px;
+            color: var(--secondary-color);
         }
     }
     .hero-image {
@@ -75,22 +74,46 @@ body {
         @media screen and (max-width: 768px) {
             transform: translateX(5%);
         }
+        @media screen and (min-width: 768px) {
+            transform: translate(12%, 7%);
+        }
         @media screen and (min-width: 1024px) {
             transform: translateX(11%);
-            right: 0;
-            bottom: 0;
         }
     }
 }
 
 #our-services {
+    padding-top: 105px;
+    padding-bottom: 100px;
     .services-image {
         width: 100%;
+        padding-left: 69px;
+        @media screen and (max-width: 768px) {
+            max-width: 90%;
+            padding-left: 0;
         }
     }
-
-    .checked-image {
-        width: 100%;
+    .services-text {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-left: 100px;
+        @media screen and (max-width: 768px) {
+            margin-top: 30px;
+            padding-left: 20px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            padding-left: 10px;
+        }
+        h2 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 14px;
+        }
+        span {
+            font-size: 14px;
         }
     }
 }
