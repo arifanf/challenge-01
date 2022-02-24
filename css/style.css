@@ -2,6 +2,7 @@
   --primary-color: #000;
   --secondary-color: #fff;
   --hero-color: #F1F3FF;
+  --primary-dark-blue: #0D28A6;
 }
 
 body {
@@ -9,6 +10,10 @@ body {
 }
 
 #header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
   padding-top: 24px;
   padding-bottom: 24px;
   background-color: var(--hero-color);
@@ -51,7 +56,8 @@ body {
 }
 
 #hero {
-  padding-top: 20px;
+  position: relative;
+  margin-top: 80px;
   background-color: var(--hero-color);
 }
 
@@ -127,6 +133,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  #hero .hero-image {
+    -webkit-transform: translateX(31%);
+            transform: translateX(31%);
+  }
+}
+
 #our-services {
   padding-top: 105px;
   padding-bottom: 100px;
@@ -139,7 +152,6 @@ body {
 
 @media screen and (max-width: 768px) {
   #our-services .services-image {
-    max-width: 90%;
     padding-left: 0;
   }
 }
@@ -246,6 +258,67 @@ body {
 
 @media screen and (max-width: 768px) {
   #why-us .why-us-text .why-us-card .card-text {
+    font-size: 12px;
+  }
+}
+
+#testimonial {
+  padding-bottom: 100px;
+}
+
+#testimonial .testimonial-image {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+  #testimonial .testimonial-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #testimonial .testimonial-card {
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+#testimonial .testimonial-card .card-1 {
+  background-color: var(--hero-color);
+  border-color: var(--hero-color);
+}
+
+#testimonial .testimonial-card .card-1 .testimonial-image {
+  padding: 15px;
+}
+
+#testimonial .testimonial-card .card-1 .testimonial-text h6 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  #testimonial .testimonial-card .card-1 .testimonial-text h6 {
+    font-size: 12px;
+  }
+}
+
+#testimonial .testimonial-card .card-1 .testimonial-text p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  #testimonial .testimonial-card .card-1 .testimonial-text p {
     font-size: 12px;
   }
 }
