@@ -25,6 +25,7 @@ body {
             margin-right: 16px;
             margin-left: 16px;
             font-size: 14px;
+            font-weight: 400;
             a {
                 color: var(--primary-color);
                 text-decoration: none;
@@ -33,6 +34,7 @@ body {
                 }
                 &.register-cta {
                     font-size: 14px;
+                    font-weight: 400;
                     color: var(--secondary-color);
                 }
             }
@@ -57,16 +59,25 @@ body {
             font-size: 30px;
             font-weight: bold;
             color: var(--primary-color);
+            @media screen and (max-width: 768px) {
+                font-size: 24px;   
+            }
         }
         p {
             margin-top: 15px;
             margin-bottom: 16px;
             font-size: 14px;
-            font-weight: 400;
+            font-weight: 300;
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+            }
         }
         .rent-cta {
             font-size: 14px;
             color: var(--secondary-color);
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+            }
         }
     }
     .hero-image {
@@ -75,7 +86,7 @@ body {
             transform: translateX(5%);
         }
         @media screen and (min-width: 768px) {
-            transform: translate(12%, 7%);
+            transform: translate(12%, 12%);
         }
         @media screen and (min-width: 1024px) {
             transform: translateX(11%);
@@ -98,22 +109,72 @@ body {
         margin-top: 30px;
         margin-bottom: 30px;
         padding-left: 100px;
+        @media screen and (max-width: 320px) {
+            margin-top: 30px;
+            padding-left: 10px;
+        }
         @media screen and (max-width: 768px) {
             margin-top: 30px;
             padding-left: 20px;
         }
-        @media screen and (min-width: 768px) and (max-width: 1024px) {
-            padding-left: 10px;
-        }
         h2 {
-            font-size: 30px;
+            font-size: 24px;
             font-weight: bold;
+            @media screen and (max-width: 768px) {
+                font-size: 18px;
+            }
         }
         p {
             font-size: 14px;
+            font-weight: 300;
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+            }
         }
         span {
             font-size: 14px;
+            font-weight: 300;
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+#why-us {
+    padding-bottom: 100px;
+    .why-us-text {
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            @media screen and (max-width: 768px) {
+                font-size: 18px;
+            }
+        }
+        p {
+            font-size: 14px;
+            font-weight: 300;
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+            }
+        }
+        .why-us-card {
+            @media screen and (max-width: 480px) {
+                padding-bottom: 15px;
+            }
+            .card-title {
+                font-size: 16px;
+                @media screen and (max-width: 768px) {
+                    font-size: 14px;
+                }
+            }
+            .card-text {
+                font-size: 14px;
+                font-weight: 300;
+                @media screen and (max-width: 768px) {
+                    font-size: 12px;
+                }
+            }
         }
     }
 }

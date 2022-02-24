@@ -28,6 +28,7 @@ body {
   margin-right: 16px;
   margin-left: 16px;
   font-size: 14px;
+  font-weight: 400;
 }
 
 #header .nav-menu li a {
@@ -41,6 +42,7 @@ body {
 
 #header .nav-menu li a.register-cta {
   font-size: 14px;
+  font-weight: 400;
   color: var(--secondary-color);
 }
 
@@ -70,16 +72,34 @@ body {
   color: var(--primary-color);
 }
 
+@media screen and (max-width: 768px) {
+  #hero .hero-text h1 {
+    font-size: 24px;
+  }
+}
+
 #hero .hero-text p {
   margin-top: 15px;
   margin-bottom: 16px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  #hero .hero-text p {
+    font-size: 12px;
+  }
 }
 
 #hero .hero-text .rent-cta {
   font-size: 14px;
   color: var(--secondary-color);
+}
+
+@media screen and (max-width: 768px) {
+  #hero .hero-text .rent-cta {
+    font-size: 12px;
+  }
 }
 
 #hero .hero-image {
@@ -95,8 +115,8 @@ body {
 
 @media screen and (min-width: 768px) {
   #hero .hero-image {
-    -webkit-transform: translate(12%, 7%);
-            transform: translate(12%, 7%);
+    -webkit-transform: translate(12%, 12%);
+            transform: translate(12%, 12%);
   }
 }
 
@@ -130,6 +150,13 @@ body {
   padding-left: 100px;
 }
 
+@media screen and (max-width: 320px) {
+  #our-services .services-text {
+    margin-top: 30px;
+    padding-left: 10px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #our-services .services-text {
     margin-top: 30px;
@@ -137,22 +164,89 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  #our-services .services-text {
-    padding-left: 10px;
-  }
+#our-services .services-text h2 {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-#our-services .services-text h2 {
-  font-size: 30px;
-  font-weight: bold;
+@media screen and (max-width: 768px) {
+  #our-services .services-text h2 {
+    font-size: 18px;
+  }
 }
 
 #our-services .services-text p {
   font-size: 14px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  #our-services .services-text p {
+    font-size: 12px;
+  }
 }
 
 #our-services .services-text span {
   font-size: 14px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  #our-services .services-text span {
+    font-size: 12px;
+  }
+}
+
+#why-us {
+  padding-bottom: 100px;
+}
+
+#why-us .why-us-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  #why-us .why-us-text h2 {
+    font-size: 18px;
+  }
+}
+
+#why-us .why-us-text p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  #why-us .why-us-text p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #why-us .why-us-text .why-us-card {
+    padding-bottom: 15px;
+  }
+}
+
+#why-us .why-us-text .why-us-card .card-title {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  #why-us .why-us-text .why-us-card .card-title {
+    font-size: 14px;
+  }
+}
+
+#why-us .why-us-text .why-us-card .card-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  #why-us .why-us-text .why-us-card .card-text {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
